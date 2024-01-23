@@ -63,6 +63,7 @@ export class GA4 {
         gaOptions?: GaOptions | any;
         gtagOptions?: any;
     }) => void;
+    gaPropertyId: string | InitOptions[];
     _currentMeasurementId: string;
     set: (fieldsObject: any) => void;
     _gaCommandSendEvent: (eventCategory: any, eventAction: any, eventLabel: any, eventValue: any, fieldsObject: any) => void;
